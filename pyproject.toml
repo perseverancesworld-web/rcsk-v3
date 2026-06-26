@@ -1,0 +1,18 @@
+[project]
+name = "rcsk-v3"
+version = "0.1.0"
+description = "Recursive Cognitive Swarm Kernel v3 - Self-reflective multi-agent cognitive OS"
+requires-python = ">=3.10"
+
+dependencies = [
+    "networkx",
+    "numpy",
+    "matplotlib",  # for basic viz
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rcsk*"]
+
+[project.scripts]
+rcsk-run = "runtime.run_local:main"
